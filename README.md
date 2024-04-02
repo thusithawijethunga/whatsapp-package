@@ -1,6 +1,3 @@
-Here's a basic README.md file for your `promoxp/whatsapp` package:
-
-```
 # promoxp/whatsapp
 
 WhatsApp Notification Channel for Laravel Applications
