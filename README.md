@@ -84,11 +84,13 @@ class HellowNotification extends Notification implements ShouldQueue
 
 ## Support
 
-If you encounter any issues or have questions about the package, please feel free to [open an issue](https://github.com/your-github-username/whatsapp-package/issues) on GitHub.
+If you encounter any issues or have questions about the package, please feel free to [open an issue](https://github.com/thusithawijethunga/whatsapp-package/issues) on GitHub.
 
 ## License
 
 This package is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-```
 
-Replace `'YOUR_TEMPLATE_ID'` with the appropriate template ID for your WhatsApp message. Also, update the GitHub repository link in the Support section with your actual GitHub repository link.
+## Join Us
+
+[WhatsApp Saas Platform](https://wap.promoxp.us/).
+
