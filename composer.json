@@ -18,5 +18,12 @@
         "psr-4": {
             "Promoxp\\WhatsApp\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Promoxp\\WhatsApp\\WhatsAppServiceProvider"
+            ]
+        }
     }
 }

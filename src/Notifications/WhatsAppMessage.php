@@ -1,6 +1,6 @@
 <?php
 
-namespace Promoxp\WhatsApp\Notifications; // Adjust the namespace
+namespace Promoxp\WhatsApp\Notifications; 
 
 class WhatsAppMessage
 {
