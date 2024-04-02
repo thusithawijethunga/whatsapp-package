@@ -12,11 +12,11 @@ class WhatsAppChannel
         $message = $notification->toWhatsApp($notifiable);
 
         $response = Http::post(config('whatsapp.api_url'), [
-            'appkey' => config('whatsapp.appkey'),
-            'authkey' => config('whatsapp.authkey'),
-            'to' => $notifiable->phone_number,
-            'template_id' => $notification->templateId(),
-            'variables' => $message->variables(),
+            'appkey'        => config('whatsapp.appkey'),
+            'authkey'       => config('whatsapp.authkey'),
+            'to'            => $message->whatsappNumber(),
+            'template_id'   => $notification->templateId(),
+            'variables'     => $message->variables(),
         ]);
 
         return $response->json();

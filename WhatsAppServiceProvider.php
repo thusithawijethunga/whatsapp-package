@@ -9,15 +9,14 @@ class WhatsAppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->app->when(WhatsAppChannel::class)
-                  ->needs('$apiUrl')
-                  ->give(config('whatsapp.api_url'));
+        $this->app
+            ->when(WhatsAppChannel::class)
+            ->needs('$apiUrl')
+            ->give(config('whatsapp.api_url'));
     }
 
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/whatsapp.php', 'whatsapp'
-        );
+        $this->mergeConfigFrom(__DIR__ . '/../config/whatsapp.php', 'whatsapp');
     }
 }
