@@ -41,7 +41,7 @@ Make sure to replace `'YOUR_TEMPLATE_ID'` with the appropriate template ID for y
 
 namespace App\Notifications;
 
-use Promoxp\WhatsApp\Notifications\WhatsAppChannel;
+use Promoxp\WhatsApp\Channels\WhatsAppChannel;
 use Promoxp\WhatsApp\Notifications\WhatsAppMessage;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
