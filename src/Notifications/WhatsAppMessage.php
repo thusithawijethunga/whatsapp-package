@@ -1,16 +1,16 @@
 <?php
 
-namespace Promoxp\WhatsApp\Channels;
+namespace Promoxp\WhatsApp\Notifications; // Adjust the namespace
 
 class WhatsAppMessage
 {
     protected $variables;
-    protected $whatsapp_number;
+    protected $recipient;
 
-    public function __construct($variables,$whatsapp_number)
+    public function __construct($variables, $recipient)
     {
-        $this->variables        = $variables;
-        $this->whatsapp_number  = $whatsapp_number;
+        $this->variables = $variables;
+        $this->recipient = $recipient;
     }
 
     public function variables()
@@ -18,8 +18,8 @@ class WhatsAppMessage
         return $this->variables;
     }
 
-    public function whatsappNumber()
+    public function recipient()
     {
-        return $this->whatsapp_number;
+        return $this->recipient;
     }
 }
